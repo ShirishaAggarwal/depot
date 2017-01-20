@@ -1,0 +1,30 @@
+li { 
+    	display: inline; 
+    	width: 5em; 
+    	border: none; 
+    	padding: 1em; 
+    	background-color: #e7e7e7; color: black;
+}
+a {
+	text-decoration: none; 
+}
+h1{
+	text-align : center;
+	color: green;
+}
+h3{
+	text-align : center;
+	color: purple;
+}
+p {
+	color : blue;
+}
+h4{
+	text-align : center;
+	color : blue;
+}
+body{
+	background-image:url("background.jpg");
+	background-size:100%;
+	display:block;
+}
