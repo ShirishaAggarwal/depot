@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<style>
+	table, thead, td {
+		border: 1px solid black;
+		align: center;
+	}
+</style>
+<header>
+	<div style="text-align:center">
+		<h1>List of Patients</h1>
+		<h2> Hi {{name}} </h2>
+	<div>
+</header>
+<body>
+	<div style="text-align:center">
+	  <table align="center">
+		 <tr>
+			<th>Name</th>
+			<th>Date of birth</th>
+			<th>Email ID</th>
+			<th>Phone</th>
+			<th>Appointment</th>
+		 </tr>
+		 
+		 {% for row in rows %}
+			<tr>
+			   <td>{{row[0]}}</td>
+			   <td>{{row[1]}}</td>
+			   <td>{{row[2]}}</td>
+			   <td>{{row[3]}}</td>	
+			   <td>{{row[4]}}</td>	
+			</tr>
+		 {% endfor %}
+	  </table>
+	  <br><br>
+	  <a href = "/">Go back to home page</a>
+	</div>
+</body>
+</html>

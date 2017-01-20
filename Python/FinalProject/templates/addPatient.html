@@ -1,0 +1,22 @@
+<html>
+   <body>
+      
+		<form action = "{{ url_for('addrec') }}" method = "POST">
+			<h3>New Patient Information</h3>
+			<label for="fullName">Full Name</label>
+				<input type="text" name="fullName" placeholder="Full Name"><br><br>	
+			<label for="dob">Date of Birth</label>
+				<input type="date" name="dob"><br><br>
+			<label for="email">Email</label>
+				<input type="email" name="email" placeholder="email@xxx.com"><br><br>
+			<label for="phone">Phone Number</label>
+				<input type="tel" name="phone" placeholder="111-222-1234"><br><br>	
+				
+			<input type = "submit" value = "submit" /><br>
+			
+			<br><br>
+			<a href = "/">Go back to home page</a>
+		</form>
+      
+   </body>
+</html>

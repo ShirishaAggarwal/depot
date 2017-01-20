@@ -1,0 +1,18 @@
+<html>
+   <body>
+      
+		<form action = "{{ url_for('makeappointment') }}" method = "POST">
+			<h3>Make Appointment</h3>
+			<label for="fullName">Full Name</label>
+				<input type="text" name="fullName" autocomplete required placeholder="Full Name"><br><br>	
+			<label for="dob">Date of Birth</label>
+				<input type="date" name="dob"><br><br>
+				
+			<input type = "submit" value = "Make Appointment" /><br>
+			
+			<br><br>
+			<a href = "/">Go back to home page</a>
+		</form>
+      
+   </body>
+</html>
