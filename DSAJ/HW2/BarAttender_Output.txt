@@ -1,0 +1,54 @@
+BarAttender.java
+Number to be guessed 1
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 1  r= 4 m= 2
+3: l= 1  r= 1 m= 1
+Number to be guessed 2
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 1  r= 4 m= 2
+Number to be guessed 3
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 1  r= 4 m= 2
+3: l= 3  r= 4 m= 3
+Number to be guessed 4
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 1  r= 4 m= 2
+3: l= 3  r= 4 m= 3
+4: l= 4  r= 4 m= 4
+Number to be guessed 5
+----------------------------
+1: l= 1  r= 10 m= 5
+Number to be guessed 6
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 6  r= 10 m= 8
+3: l= 6  r= 7 m= 6
+Number to be guessed 7
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 6  r= 10 m= 8
+3: l= 6  r= 7 m= 6
+4: l= 7  r= 7 m= 7
+Number to be guessed 8
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 6  r= 10 m= 8
+Number to be guessed 9
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 6  r= 10 m= 8
+3: l= 9  r= 10 m= 9
+Number to be guessed 10
+----------------------------
+1: l= 1  r= 10 m= 5
+2: l= 6  r= 10 m= 8
+3: l= 9  r= 10 m= 9
+4: l= 10  r= 10 m= 10
+For numbers  between 1 to 10 (not random numbers) the min guess is 1 max guess is 4
+For numbers  between 1 to 1000000 (not random numbers) the min guess is 1 max guess is 20
+For numbers  between 1 to 1000000 (random numbers) the min guess is 9 max guess is 20
+DONE

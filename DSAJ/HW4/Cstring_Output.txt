@@ -1,0 +1,21 @@
+Cstring.java
+-----------Basic----------------
+a = b
+b = 7
+c = 123456789012345678901234567890123456789012345678901234567890
+d = 123456789012345678901234567890123456789012345678901234567890
+e = A quick brown fox junped over a lazy dog
+f =  Gateman sees name garageman sees nametag
+f' = gateman sees namegarag eman sees nametaG
+-----------Addition----------------
+a = UCSC
+b = Extension
+c = UCSCExtension
+d = UCSCExtensionUSA
+a+b = UCSCExtension
+a+b+World = UCSCExtensionWorld
+-----------Equal----------------
+a = 123456789012345678901234567890123456789012345678901234567890
+b = 123456789012345678901234567890123456789012345678901234567890
+c = 12345678901234567890123456789012345678901234567890123456789
+Done

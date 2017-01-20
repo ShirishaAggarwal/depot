@@ -1,0 +1,614 @@
+HauffmanTest.java
+
+ ============= a +++++++++++++++++++
+a occurs 1 times
+==== Tree is build in this order =============
+Leaf node 1 Character is a Weight is 1
+============Code for each character in a===========================
+=============== Original String ===========
+a
+=============== Decoded String ============
+0
+======= Recovered String ============
+a
+Original string cost = 7.0
+Decoded  string cost = 1.0
+% reduction = 85.71428571428571
+
+ ============= aba +++++++++++++++++++
+a occurs 2 times
+b occurs 1 times
+==== Tree is build in this order =============
+Internal node 1 : Left b(1), Right a(2) Weight = 3
+Leaf node 2 Character is b Weight is 1
+Leaf node 3 Character is a Weight is 2
+============Code for each character in aba===========================
+b has Code 0
+a has Code 1
+=============== Original String ===========
+aba
+=============== Decoded String ============
+101
+======= Recovered String ============
+aba
+Original string cost = 21.0
+Decoded  string cost = 3.0
+% reduction = 85.71428571428571
+
+ ============= aaabbggggghhhhaaaggggaaaaa_+@# +++++++++++++++++++
+@ occurs 1 times
+a occurs 11 times
+b occurs 2 times
+# occurs 1 times
+g occurs 9 times
+h occurs 4 times
++ occurs 1 times
+_ occurs 1 times
+==== Tree is build in this order =============
+Internal node 1 : Left a(11), Right (19) Weight = 30
+Leaf node 2 Character is a Weight is 11
+Internal node 3 : Left g(9), Right (10) Weight = 19
+Leaf node 4 Character is g Weight is 9
+Internal node 5 : Left h(4), Right (6) Weight = 10
+Leaf node 6 Character is h Weight is 4
+Internal node 7 : Left (2), Right (4) Weight = 6
+Internal node 8 : Left @(1), Right #(1) Weight = 2
+Internal node 9 : Left b(2), Right (2) Weight = 4
+Leaf node 10 Character is @ Weight is 1
+Leaf node 11 Character is # Weight is 1
+Leaf node 12 Character is b Weight is 2
+Internal node 13 : Left _(1), Right +(1) Weight = 2
+Leaf node 14 Character is _ Weight is 1
+Leaf node 15 Character is + Weight is 1
+============Code for each character in aaabbggggghhhhaaaggggaaaaa_+@#===========================
+a has Code 0
+g has Code 10
+h has Code 110
+@ has Code 11100
+# has Code 11101
+b has Code 11110
+_ has Code 111110
++ has Code 111111
+=============== Original String ===========
+aaabbggggghhhhaaaggggaaaaa_+@#
+=============== Decoded String ============
+0001111011110101010101011011011011000010101010000001111101111111110011101
+======= Recovered String ============
+aaabbggggghhhhaaaggggaaaaa_+@#
+Original string cost = 210.0
+Decoded  string cost = 73.0
+% reduction = 65.23809523809524
+
+ ============= A quick brown fox jumps over the lazy dog +++++++++++++++++++
+A occurs 1 times
+  occurs 8 times
+a occurs 1 times
+b occurs 1 times
+c occurs 1 times
+d occurs 1 times
+e occurs 2 times
+f occurs 1 times
+g occurs 1 times
+h occurs 1 times
+i occurs 1 times
+j occurs 1 times
+k occurs 1 times
+l occurs 1 times
+m occurs 1 times
+n occurs 1 times
+o occurs 4 times
+p occurs 1 times
+q occurs 1 times
+r occurs 2 times
+s occurs 1 times
+t occurs 1 times
+u occurs 2 times
+v occurs 1 times
+w occurs 1 times
+x occurs 1 times
+y occurs 1 times
+z occurs 1 times
+==== Tree is build in this order =============
+Internal node 1 : Left (16), Right (25) Weight = 41
+Internal node 2 : Left  (8), Right (8) Weight = 16
+Internal node 3 : Left (9), Right (16) Weight = 25
+Leaf node 4 Character is   Weight is 8
+Internal node 5 : Left (4), Right (4) Weight = 8
+Internal node 6 : Left (4), Right (5) Weight = 9
+Internal node 7 : Left (8), Right (8) Weight = 16
+Internal node 8 : Left (2), Right (2) Weight = 4
+Internal node 9 : Left (2), Right e(2) Weight = 4
+Internal node 10 : Left (2), Right (2) Weight = 4
+Internal node 11 : Left (2), Right (3) Weight = 5
+Internal node 12 : Left (4), Right (4) Weight = 8
+Internal node 13 : Left (4), Right o(4) Weight = 8
+Internal node 14 : Left v(1), Right p(1) Weight = 2
+Internal node 15 : Left q(1), Right c(1) Weight = 2
+Internal node 16 : Left A(1), Right b(1) Weight = 2
+Leaf node 17 Character is e Weight is 2
+Internal node 18 : Left a(1), Right d(1) Weight = 2
+Internal node 19 : Left x(1), Right n(1) Weight = 2
+Internal node 20 : Left j(1), Right k(1) Weight = 2
+Internal node 21 : Left m(1), Right (2) Weight = 3
+Internal node 22 : Left (2), Right r(2) Weight = 4
+Internal node 23 : Left (2), Right u(2) Weight = 4
+Internal node 24 : Left (2), Right (2) Weight = 4
+Leaf node 25 Character is o Weight is 4
+Leaf node 26 Character is v Weight is 1
+Leaf node 27 Character is p Weight is 1
+Leaf node 28 Character is q Weight is 1
+Leaf node 29 Character is c Weight is 1
+Leaf node 30 Character is A Weight is 1
+Leaf node 31 Character is b Weight is 1
+Leaf node 32 Character is a Weight is 1
+Leaf node 33 Character is d Weight is 1
+Leaf node 34 Character is x Weight is 1
+Leaf node 35 Character is n Weight is 1
+Leaf node 36 Character is j Weight is 1
+Leaf node 37 Character is k Weight is 1
+Leaf node 38 Character is m Weight is 1
+Internal node 39 : Left l(1), Right z(1) Weight = 2
+Internal node 40 : Left y(1), Right f(1) Weight = 2
+Leaf node 41 Character is r Weight is 2
+Internal node 42 : Left s(1), Right i(1) Weight = 2
+Leaf node 43 Character is u Weight is 2
+Internal node 44 : Left t(1), Right h(1) Weight = 2
+Internal node 45 : Left w(1), Right g(1) Weight = 2
+Leaf node 46 Character is l Weight is 1
+Leaf node 47 Character is z Weight is 1
+Leaf node 48 Character is y Weight is 1
+Leaf node 49 Character is f Weight is 1
+Leaf node 50 Character is s Weight is 1
+Leaf node 51 Character is i Weight is 1
+Leaf node 52 Character is t Weight is 1
+Leaf node 53 Character is h Weight is 1
+Leaf node 54 Character is w Weight is 1
+Leaf node 55 Character is g Weight is 1
+============Code for each character in A quick brown fox jumps over the lazy dog===========================
+  has Code 00
+e has Code 0111
+o has Code 1111
+v has Code 01000
+p has Code 01001
+q has Code 01010
+c has Code 01011
+A has Code 01100
+b has Code 01101
+a has Code 10000
+d has Code 10001
+x has Code 10010
+n has Code 10011
+j has Code 10100
+k has Code 10101
+m has Code 10110
+r has Code 11001
+u has Code 11011
+l has Code 101110
+z has Code 101111
+y has Code 110000
+f has Code 110001
+s has Code 110100
+i has Code 110101
+t has Code 111000
+h has Code 111001
+w has Code 111010
+g has Code 111011
+=============== Original String ===========
+A quick brown fox jumps over the lazy dog
+=============== Decoded String ============
+01100000101011011110101010111010100011011100111111110101001100110001111110010001010011011101100100111010000111101000011111001001110001110010111001011101000010111111000000100011111111011
+======= Recovered String ============
+A quick brown fox jumps over the lazy dog
+Original string cost = 287.0
+Decoded  string cost = 185.0
+% reduction = 35.54006968641115
+
+ ============= Pack my box with five dozen liquor jugs +++++++++++++++++++
+P occurs 1 times
+  occurs 7 times
+a occurs 1 times
+b occurs 1 times
+c occurs 1 times
+d occurs 1 times
+e occurs 2 times
+f occurs 1 times
+g occurs 1 times
+h occurs 1 times
+i occurs 3 times
+j occurs 1 times
+k occurs 1 times
+l occurs 1 times
+m occurs 1 times
+n occurs 1 times
+o occurs 3 times
+q occurs 1 times
+r occurs 1 times
+s occurs 1 times
+t occurs 1 times
+u occurs 2 times
+v occurs 1 times
+w occurs 1 times
+x occurs 1 times
+y occurs 1 times
+z occurs 1 times
+==== Tree is build in this order =============
+Internal node 1 : Left (16), Right (23) Weight = 39
+Internal node 2 : Left (8), Right (8) Weight = 16
+Internal node 3 : Left (9), Right (14) Weight = 23
+Internal node 4 : Left (4), Right (4) Weight = 8
+Internal node 5 : Left (4), Right (4) Weight = 8
+Internal node 6 : Left (4), Right (5) Weight = 9
+Internal node 7 : Left  (7), Right (7) Weight = 14
+Internal node 8 : Left (2), Right (2) Weight = 4
+Internal node 9 : Left (2), Right (2) Weight = 4
+Internal node 10 : Left (2), Right (2) Weight = 4
+Internal node 11 : Left (2), Right (2) Weight = 4
+Internal node 12 : Left (2), Right u(2) Weight = 4
+Internal node 13 : Left e(2), Right o(3) Weight = 5
+Leaf node 14 Character is   Weight is 7
+Internal node 15 : Left i(3), Right (4) Weight = 7
+Internal node 16 : Left h(1), Right s(1) Weight = 2
+Internal node 17 : Left r(1), Right c(1) Weight = 2
+Internal node 18 : Left a(1), Right d(1) Weight = 2
+Internal node 19 : Left j(1), Right k(1) Weight = 2
+Internal node 20 : Left t(1), Right v(1) Weight = 2
+Internal node 21 : Left g(1), Right q(1) Weight = 2
+Internal node 22 : Left y(1), Right b(1) Weight = 2
+Internal node 23 : Left x(1), Right f(1) Weight = 2
+Internal node 24 : Left l(1), Right m(1) Weight = 2
+Leaf node 25 Character is u Weight is 2
+Leaf node 26 Character is e Weight is 2
+Leaf node 27 Character is o Weight is 3
+Leaf node 28 Character is i Weight is 3
+Internal node 29 : Left (2), Right (2) Weight = 4
+Leaf node 30 Character is h Weight is 1
+Leaf node 31 Character is s Weight is 1
+Leaf node 32 Character is r Weight is 1
+Leaf node 33 Character is c Weight is 1
+Leaf node 34 Character is a Weight is 1
+Leaf node 35 Character is d Weight is 1
+Leaf node 36 Character is j Weight is 1
+Leaf node 37 Character is k Weight is 1
+Leaf node 38 Character is t Weight is 1
+Leaf node 39 Character is v Weight is 1
+Leaf node 40 Character is g Weight is 1
+Leaf node 41 Character is q Weight is 1
+Leaf node 42 Character is y Weight is 1
+Leaf node 43 Character is b Weight is 1
+Leaf node 44 Character is x Weight is 1
+Leaf node 45 Character is f Weight is 1
+Leaf node 46 Character is l Weight is 1
+Leaf node 47 Character is m Weight is 1
+Internal node 48 : Left w(1), Right n(1) Weight = 2
+Internal node 49 : Left P(1), Right z(1) Weight = 2
+Leaf node 50 Character is w Weight is 1
+Leaf node 51 Character is n Weight is 1
+Leaf node 52 Character is P Weight is 1
+Leaf node 53 Character is z Weight is 1
+============Code for each character in Pack my box with five dozen liquor jugs===========================
+  has Code 110
+u has Code 1001
+e has Code 1010
+o has Code 1011
+i has Code 1110
+h has Code 00000
+s has Code 00001
+r has Code 00010
+c has Code 00011
+a has Code 00100
+d has Code 00101
+j has Code 00110
+k has Code 00111
+t has Code 01000
+v has Code 01001
+g has Code 01010
+q has Code 01011
+y has Code 01100
+b has Code 01101
+x has Code 01110
+f has Code 01111
+l has Code 10000
+m has Code 10001
+w has Code 111100
+n has Code 111101
+P has Code 111110
+z has Code 111111
+=============== Original String ===========
+Pack my box with five dozen liquor jugs
+=============== Decoded String ============
+1111100010000011001111101000101100110011011011011101101111001110010000000011001111111001001101011000101101111111110101111011101000011100101110011011000101100011010010101000001
+======= Recovered String ============
+Pack my box with five dozen liquor jugs
+Original string cost = 273.0
+Decoded  string cost = 175.0
+% reduction = 35.8974358974359
+
+ ============= Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance. +++++++++++++++++++
+A occurs 2 times
+I occurs 1 times
+L occurs 1 times
+  occurs 79 times
+a occurs 20 times
+b occurs 3 times
+c occurs 5 times
+d occurs 15 times
+e occurs 47 times
+f occurs 7 times
+g occurs 6 times
+h occurs 20 times
+i occurs 15 times
+k occurs 2 times
+, occurs 11 times
+l occurs 18 times
+m occurs 12 times
+n occurs 26 times
+. occurs 3 times
+o occurs 26 times
+p occurs 5 times
+r occurs 17 times
+s occurs 21 times
+t occurs 29 times
+u occurs 11 times
+v occurs 1 times
+w occurs 16 times
+y occurs 8 times
+==== Tree is build in this order =============
+Internal node 1 : Left (172), Right (255) Weight = 427
+Internal node 2 : Left  (79), Right (93) Weight = 172
+Internal node 3 : Left (110), Right (145) Weight = 255
+Leaf node 4 Character is   Weight is 79
+Internal node 5 : Left (46), Right e(47) Weight = 93
+Internal node 6 : Left (52), Right (58) Weight = 110
+Internal node 7 : Left (66), Right (79) Weight = 145
+Internal node 8 : Left (22), Right (24) Weight = 46
+Leaf node 9 Character is e Weight is 47
+Internal node 10 : Left o(26), Right n(26) Weight = 52
+Internal node 11 : Left (29), Right t(29) Weight = 58
+Internal node 12 : Left (31), Right (35) Weight = 66
+Internal node 13 : Left (38), Right (41) Weight = 79
+Internal node 14 : Left u(11), Right ,(11) Weight = 22
+Internal node 15 : Left m(12), Right (12) Weight = 24
+Leaf node 16 Character is o Weight is 26
+Leaf node 17 Character is n Weight is 26
+Internal node 18 : Left (14), Right d(15) Weight = 29
+Leaf node 19 Character is t Weight is 29
+Internal node 20 : Left i(15), Right w(16) Weight = 31
+Internal node 21 : Left r(17), Right l(18) Weight = 35
+Internal node 22 : Left (18), Right a(20) Weight = 38
+Internal node 23 : Left h(20), Right s(21) Weight = 41
+Leaf node 24 Character is u Weight is 11
+Leaf node 25 Character is , Weight is 11
+Leaf node 26 Character is m Weight is 12
+Internal node 27 : Left g(6), Right (6) Weight = 12
+Internal node 28 : Left f(7), Right (7) Weight = 14
+Leaf node 29 Character is d Weight is 15
+Leaf node 30 Character is i Weight is 15
+Leaf node 31 Character is w Weight is 16
+Leaf node 32 Character is r Weight is 17
+Leaf node 33 Character is l Weight is 18
+Internal node 34 : Left y(8), Right (10) Weight = 18
+Leaf node 35 Character is a Weight is 20
+Leaf node 36 Character is h Weight is 20
+Leaf node 37 Character is s Weight is 21
+Leaf node 38 Character is g Weight is 6
+Internal node 39 : Left .(3), Right b(3) Weight = 6
+Leaf node 40 Character is f Weight is 7
+Internal node 41 : Left (3), Right (4) Weight = 7
+Leaf node 42 Character is y Weight is 8
+Internal node 43 : Left p(5), Right c(5) Weight = 10
+Leaf node 44 Character is . Weight is 3
+Leaf node 45 Character is b Weight is 3
+Internal node 46 : Left v(1), Right A(2) Weight = 3
+Internal node 47 : Left k(2), Right (2) Weight = 4
+Leaf node 48 Character is p Weight is 5
+Leaf node 49 Character is c Weight is 5
+Leaf node 50 Character is v Weight is 1
+Leaf node 51 Character is A Weight is 2
+Leaf node 52 Character is k Weight is 2
+Internal node 53 : Left I(1), Right L(1) Weight = 2
+Leaf node 54 Character is I Weight is 1
+Leaf node 55 Character is L Weight is 1
+============Code for each character in Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.===========================
+  has Code 00
+e has Code 011
+o has Code 1000
+n has Code 1001
+t has Code 1011
+u has Code 01000
+, has Code 01001
+m has Code 01010
+d has Code 10101
+i has Code 11000
+w has Code 11001
+r has Code 11010
+l has Code 11011
+a has Code 11101
+h has Code 11110
+s has Code 11111
+g has Code 010110
+f has Code 101000
+y has Code 111000
+. has Code 0101110
+b has Code 0101111
+p has Code 1110010
+c has Code 1110011
+v has Code 10100100
+A has Code 10100101
+k has Code 10100110
+I has Code 101001110
+L has Code 101001111
+=============== Original String ===========
+Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.
+=============== Decoded String ============
+10100111110001001010110001110000111110111010111110011101010110100000110010110001010111011010101100111010010111101011100011111101100110011100010111111000101010111111110111100010011110000100100111011001101010010011000110010010111111001100101111000010100110011100111000010100111111100110011111001110010011001011001111111110111011101111011001101001110101011011010100010000100011010001110010110110111010101011001101001001001100010110011001111101000110111101111100000100011010001100010010010100001000110111101100010100111110111111010001101001101001000101111010001011001010010001111010111000001111101000010111111111101111101100110111100011101110111101111100001011101010010110110010111111001100111111011110101000101001100110010001010000010111111001100010101100010101100111000010110111101011001111010000100011010010010011001111100111001001011111100110011001100011010110111010100111111101101101111100101111101001001010011101001101011100011101001100111000110111101100111011100111101101001100110010111000001101111000101000011001110110011010100101000110100110111010110000101001011100010100101000101010000101001110011011001110011100001010011111110100100110011111011000111001111110001110011100001010011111110001011110100010110011010111011101001111011111000001100010010011110110001111110111000110101110000100100110011111001110010011001011001111110110111110010001000010001011001010001101010000101000101111110011001000110111010100101110000010111111001100100101111001010010011001111100111001001110110010011101010110011000111001101011111101001001110110011010100110011111001110010010111111001100111111000010001101100100010100000111010010011110110111100010001001010010011011100010010101100011111010001110010111001011010011111111111101110101010010010100011000100110101111110001000101110110111101011101100111100110110101110
+======= Recovered String ============
+Long years ago we made a tryst with destiny, and now the time comes when we shall redeem our pledge, not wholly or in full measure, but very substantially.At the stroke of the midnight hour, when the world sleeps, India will awake to life and freedom. A moment comes, which comes but rarely in history, when we step out from the old to the new, when an age ends, and when the soul of a nation, long suppressed, finds utterance.
+Original string cost = 2989.0
+Decoded  string cost = 1799.0
+% reduction = 39.812646370023415
+
+ ============= Baa, baa, black sheep, have you any wool? +++++++++++++++++++
+  occurs 7 times
+a occurs 7 times
+B occurs 1 times
+b occurs 2 times
+c occurs 1 times
+e occurs 3 times
+h occurs 2 times
+k occurs 1 times
+, occurs 3 times
+l occurs 2 times
+n occurs 1 times
+o occurs 3 times
+p occurs 1 times
+s occurs 1 times
+u occurs 1 times
+v occurs 1 times
+w occurs 1 times
+y occurs 2 times
+? occurs 1 times
+==== Tree is build in this order =============
+Internal node 1 : Left (16), Right (25) Weight = 41
+Internal node 2 : Left (8), Right (8) Weight = 16
+Internal node 3 : Left (11), Right (14) Weight = 25
+Internal node 4 : Left (4), Right (4) Weight = 8
+Internal node 5 : Left (4), Right (4) Weight = 8
+Internal node 6 : Left (5), Right (6) Weight = 11
+Internal node 7 : Left a(7), Right  (7) Weight = 14
+Internal node 8 : Left y(2), Right (2) Weight = 4
+Internal node 9 : Left b(2), Right h(2) Weight = 4
+Internal node 10 : Left (2), Right l(2) Weight = 4
+Internal node 11 : Left (2), Right (2) Weight = 4
+Internal node 12 : Left (2), Right o(3) Weight = 5
+Internal node 13 : Left ,(3), Right e(3) Weight = 6
+Leaf node 14 Character is a Weight is 7
+Leaf node 15 Character is   Weight is 7
+Leaf node 16 Character is y Weight is 2
+Internal node 17 : Left s(1), Right u(1) Weight = 2
+Leaf node 18 Character is b Weight is 2
+Leaf node 19 Character is h Weight is 2
+Internal node 20 : Left B(1), Right c(1) Weight = 2
+Leaf node 21 Character is l Weight is 2
+Internal node 22 : Left k(1), Right v(1) Weight = 2
+Internal node 23 : Left w(1), Right ?(1) Weight = 2
+Internal node 24 : Left n(1), Right p(1) Weight = 2
+Leaf node 25 Character is o Weight is 3
+Leaf node 26 Character is , Weight is 3
+Leaf node 27 Character is e Weight is 3
+Leaf node 28 Character is s Weight is 1
+Leaf node 29 Character is u Weight is 1
+Leaf node 30 Character is B Weight is 1
+Leaf node 31 Character is c Weight is 1
+Leaf node 32 Character is k Weight is 1
+Leaf node 33 Character is v Weight is 1
+Leaf node 34 Character is w Weight is 1
+Leaf node 35 Character is ? Weight is 1
+Leaf node 36 Character is n Weight is 1
+Leaf node 37 Character is p Weight is 1
+============Code for each character in Baa, baa, black sheep, have you any wool?===========================
+a has Code 110
+  has Code 111
+y has Code 0000
+b has Code 0010
+h has Code 0011
+l has Code 0101
+o has Code 1001
+, has Code 1010
+e has Code 1011
+s has Code 00010
+u has Code 00011
+B has Code 01000
+c has Code 01001
+k has Code 01100
+v has Code 01101
+w has Code 01110
+? has Code 01111
+n has Code 10000
+p has Code 10001
+=============== Original String ===========
+Baa, baa, black sheep, have you any wool?
+=============== Decoded String ============
+0100011011010101110010110110101011100100101110010010110011100010001110111011100011010111001111001101101111100001001000111111101000000001110111010011001010101111
+======= Recovered String ============
+Baa, baa, black sheep, have you any wool?
+Original string cost = 287.0
+Decoded  string cost = 160.0
+% reduction = 44.25087108013937
+
+ ============= this is an example of a huffman tree +++++++++++++++++++
+  occurs 7 times
+a occurs 4 times
+e occurs 4 times
+f occurs 3 times
+h occurs 2 times
+i occurs 2 times
+l occurs 1 times
+m occurs 2 times
+n occurs 2 times
+o occurs 1 times
+p occurs 1 times
+r occurs 1 times
+s occurs 2 times
+t occurs 2 times
+u occurs 1 times
+x occurs 1 times
+==== Tree is build in this order =============
+Internal node 1 : Left (16), Right (20) Weight = 36
+Internal node 2 : Left (8), Right (8) Weight = 16
+Internal node 3 : Left (8), Right (12) Weight = 20
+Internal node 4 : Left (4), Right (4) Weight = 8
+Internal node 5 : Left a(4), Right e(4) Weight = 8
+Internal node 6 : Left (4), Right (4) Weight = 8
+Internal node 7 : Left (5), Right  (7) Weight = 12
+Internal node 8 : Left (2), Right h(2) Weight = 4
+Internal node 9 : Left (2), Right n(2) Weight = 4
+Leaf node 10 Character is a Weight is 4
+Leaf node 11 Character is e Weight is 4
+Internal node 12 : Left i(2), Right m(2) Weight = 4
+Internal node 13 : Left s(2), Right (2) Weight = 4
+Internal node 14 : Left t(2), Right f(3) Weight = 5
+Leaf node 15 Character is   Weight is 7
+Internal node 16 : Left x(1), Right p(1) Weight = 2
+Leaf node 17 Character is h Weight is 2
+Internal node 18 : Left l(1), Right o(1) Weight = 2
+Leaf node 19 Character is n Weight is 2
+Leaf node 20 Character is i Weight is 2
+Leaf node 21 Character is m Weight is 2
+Leaf node 22 Character is s Weight is 2
+Internal node 23 : Left r(1), Right u(1) Weight = 2
+Leaf node 24 Character is t Weight is 2
+Leaf node 25 Character is f Weight is 3
+Leaf node 26 Character is x Weight is 1
+Leaf node 27 Character is p Weight is 1
+Leaf node 28 Character is l Weight is 1
+Leaf node 29 Character is o Weight is 1
+Leaf node 30 Character is r Weight is 1
+Leaf node 31 Character is u Weight is 1
+============Code for each character in this is an example of a huffman tree===========================
+a has Code 010
+e has Code 011
+  has Code 111
+h has Code 0001
+n has Code 0011
+i has Code 1000
+m has Code 1001
+s has Code 1010
+t has Code 1100
+f has Code 1101
+x has Code 00000
+p has Code 00001
+l has Code 00100
+o has Code 00101
+r has Code 10110
+u has Code 10111
+=============== Original String ===========
+this is an example of a huffman tree
+=============== Decoded String ============
+110000011000101011110001010111010001111101100000010100100001001000111110010111011110101110001101111101110110010100011111110010110011011
+======= Recovered String ============
+this is an example of a huffman tree
+Original string cost = 252.0
+Decoded  string cost = 135.0
+% reduction = 46.42857142857143
+===============  Done with Test1 ==================
+ All Hauffman Test passed. You are great. You should get an award

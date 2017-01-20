@@ -1,0 +1,55 @@
+Output - 1:
+
+PowerBall.java
+----------testRandom()  starts-------------
+Buying 1000000 tickets of worth 2000000$
+Out of 1000000 times you win 595038$
+Loss = -1404962
+----------testRandom()  ends-------------
+Done
+
+
+Output - 2:
+
+PowerBall.java
+----------testRandom()  starts-------------
+Buying 1000000 tickets of worth 2000000$
+Out of 1000000 times you win 93725$
+Loss = -1906275
+----------testRandom()  ends-------------
+Done
+
+
+Output - 3:
+
+
+PowerBall.java
+----------testRandom()  starts-------------
+Buying 1000000 tickets of worth 2000000$
+Out of 1000000 times you win 592109$
+Loss = -1407891
+----------testRandom()  ends-------------
+Done
+
+
+
+Output - 4:
+
+PowerBall.java
+----------testRandom()  starts-------------
+Buying 1000000 tickets of worth 2000000$
+Out of 1000000 times you win 2094343$
+Profit = 94343
+----------testRandom()  ends-------------
+Done
+
+
+Output - 5:
+
+PowerBall.java
+----------testRandom()  starts-------------
+Buying 1000000 tickets of worth 2000000$
+Out of 1000000 times you win 1093931$
+Loss = -906069
+----------testRandom()  ends-------------
+Done

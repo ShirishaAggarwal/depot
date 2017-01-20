@@ -1,0 +1,334 @@
+TruthTable.java
+------------Truth table of 1 inputs function --------------
+0 
+1 
+For 1 inputs , table size is 2
+------------Truth table of 2 inputs function --------------
+0 0 
+0 1 
+1 0 
+1 1 
+For 2 inputs , table size is 4
+------------Truth table of 3 inputs function --------------
+0 0 0 
+0 0 1 
+0 1 0 
+0 1 1 
+1 0 0 
+1 0 1 
+1 1 0 
+1 1 1 
+For 3 inputs , table size is 8
+------------Truth table of 4 inputs function --------------
+0 0 0 0 
+0 0 0 1 
+0 0 1 0 
+0 0 1 1 
+0 1 0 0 
+0 1 0 1 
+0 1 1 0 
+0 1 1 1 
+1 0 0 0 
+1 0 0 1 
+1 0 1 0 
+1 0 1 1 
+1 1 0 0 
+1 1 0 1 
+1 1 1 0 
+1 1 1 1 
+For 4 inputs , table size is 16
+------------Truth table of 5 inputs function --------------
+0 0 0 0 0 
+0 0 0 0 1 
+0 0 0 1 0 
+0 0 0 1 1 
+0 0 1 0 0 
+0 0 1 0 1 
+0 0 1 1 0 
+0 0 1 1 1 
+0 1 0 0 0 
+0 1 0 0 1 
+0 1 0 1 0 
+0 1 0 1 1 
+0 1 1 0 0 
+0 1 1 0 1 
+0 1 1 1 0 
+0 1 1 1 1 
+1 0 0 0 0 
+1 0 0 0 1 
+1 0 0 1 0 
+1 0 0 1 1 
+1 0 1 0 0 
+1 0 1 0 1 
+1 0 1 1 0 
+1 0 1 1 1 
+1 1 0 0 0 
+1 1 0 0 1 
+1 1 0 1 0 
+1 1 0 1 1 
+1 1 1 0 0 
+1 1 1 0 1 
+1 1 1 1 0 
+1 1 1 1 1 
+For 5 inputs , table size is 32
+------------Truth table of 6 inputs function --------------
+0 0 0 0 0 0 
+0 0 0 0 0 1 
+0 0 0 0 1 0 
+0 0 0 0 1 1 
+0 0 0 1 0 0 
+0 0 0 1 0 1 
+0 0 0 1 1 0 
+0 0 0 1 1 1 
+0 0 1 0 0 0 
+0 0 1 0 0 1 
+0 0 1 0 1 0 
+0 0 1 0 1 1 
+0 0 1 1 0 0 
+0 0 1 1 0 1 
+0 0 1 1 1 0 
+0 0 1 1 1 1 
+0 1 0 0 0 0 
+0 1 0 0 0 1 
+0 1 0 0 1 0 
+0 1 0 0 1 1 
+0 1 0 1 0 0 
+0 1 0 1 0 1 
+0 1 0 1 1 0 
+0 1 0 1 1 1 
+0 1 1 0 0 0 
+0 1 1 0 0 1 
+0 1 1 0 1 0 
+0 1 1 0 1 1 
+0 1 1 1 0 0 
+0 1 1 1 0 1 
+0 1 1 1 1 0 
+0 1 1 1 1 1 
+1 0 0 0 0 0 
+1 0 0 0 0 1 
+1 0 0 0 1 0 
+1 0 0 0 1 1 
+1 0 0 1 0 0 
+1 0 0 1 0 1 
+1 0 0 1 1 0 
+1 0 0 1 1 1 
+1 0 1 0 0 0 
+1 0 1 0 0 1 
+1 0 1 0 1 0 
+1 0 1 0 1 1 
+1 0 1 1 0 0 
+1 0 1 1 0 1 
+1 0 1 1 1 0 
+1 0 1 1 1 1 
+1 1 0 0 0 0 
+1 1 0 0 0 1 
+1 1 0 0 1 0 
+1 1 0 0 1 1 
+1 1 0 1 0 0 
+1 1 0 1 0 1 
+1 1 0 1 1 0 
+1 1 0 1 1 1 
+1 1 1 0 0 0 
+1 1 1 0 0 1 
+1 1 1 0 1 0 
+1 1 1 0 1 1 
+1 1 1 1 0 0 
+1 1 1 1 0 1 
+1 1 1 1 1 0 
+1 1 1 1 1 1 
+For 6 inputs , table size is 64
+------------Truth table of 7 inputs function --------------
+0 0 0 0 0 0 0 
+0 0 0 0 0 0 1 
+0 0 0 0 0 1 0 
+0 0 0 0 0 1 1 
+0 0 0 0 1 0 0 
+0 0 0 0 1 0 1 
+0 0 0 0 1 1 0 
+0 0 0 0 1 1 1 
+0 0 0 1 0 0 0 
+0 0 0 1 0 0 1 
+0 0 0 1 0 1 0 
+0 0 0 1 0 1 1 
+0 0 0 1 1 0 0 
+0 0 0 1 1 0 1 
+0 0 0 1 1 1 0 
+0 0 0 1 1 1 1 
+0 0 1 0 0 0 0 
+0 0 1 0 0 0 1 
+0 0 1 0 0 1 0 
+0 0 1 0 0 1 1 
+0 0 1 0 1 0 0 
+0 0 1 0 1 0 1 
+0 0 1 0 1 1 0 
+0 0 1 0 1 1 1 
+0 0 1 1 0 0 0 
+0 0 1 1 0 0 1 
+0 0 1 1 0 1 0 
+0 0 1 1 0 1 1 
+0 0 1 1 1 0 0 
+0 0 1 1 1 0 1 
+0 0 1 1 1 1 0 
+0 0 1 1 1 1 1 
+0 1 0 0 0 0 0 
+0 1 0 0 0 0 1 
+0 1 0 0 0 1 0 
+0 1 0 0 0 1 1 
+0 1 0 0 1 0 0 
+0 1 0 0 1 0 1 
+0 1 0 0 1 1 0 
+0 1 0 0 1 1 1 
+0 1 0 1 0 0 0 
+0 1 0 1 0 0 1 
+0 1 0 1 0 1 0 
+0 1 0 1 0 1 1 
+0 1 0 1 1 0 0 
+0 1 0 1 1 0 1 
+0 1 0 1 1 1 0 
+0 1 0 1 1 1 1 
+0 1 1 0 0 0 0 
+0 1 1 0 0 0 1 
+0 1 1 0 0 1 0 
+0 1 1 0 0 1 1 
+0 1 1 0 1 0 0 
+0 1 1 0 1 0 1 
+0 1 1 0 1 1 0 
+0 1 1 0 1 1 1 
+0 1 1 1 0 0 0 
+0 1 1 1 0 0 1 
+0 1 1 1 0 1 0 
+0 1 1 1 0 1 1 
+0 1 1 1 1 0 0 
+0 1 1 1 1 0 1 
+0 1 1 1 1 1 0 
+0 1 1 1 1 1 1 
+1 0 0 0 0 0 0 
+1 0 0 0 0 0 1 
+1 0 0 0 0 1 0 
+1 0 0 0 0 1 1 
+1 0 0 0 1 0 0 
+1 0 0 0 1 0 1 
+1 0 0 0 1 1 0 
+1 0 0 0 1 1 1 
+1 0 0 1 0 0 0 
+1 0 0 1 0 0 1 
+1 0 0 1 0 1 0 
+1 0 0 1 0 1 1 
+1 0 0 1 1 0 0 
+1 0 0 1 1 0 1 
+1 0 0 1 1 1 0 
+1 0 0 1 1 1 1 
+1 0 1 0 0 0 0 
+1 0 1 0 0 0 1 
+1 0 1 0 0 1 0 
+1 0 1 0 0 1 1 
+1 0 1 0 1 0 0 
+1 0 1 0 1 0 1 
+1 0 1 0 1 1 0 
+1 0 1 0 1 1 1 
+1 0 1 1 0 0 0 
+1 0 1 1 0 0 1 
+1 0 1 1 0 1 0 
+1 0 1 1 0 1 1 
+1 0 1 1 1 0 0 
+1 0 1 1 1 0 1 
+1 0 1 1 1 1 0 
+1 0 1 1 1 1 1 
+1 1 0 0 0 0 0 
+1 1 0 0 0 0 1 
+1 1 0 0 0 1 0 
+1 1 0 0 0 1 1 
+1 1 0 0 1 0 0 
+1 1 0 0 1 0 1 
+1 1 0 0 1 1 0 
+1 1 0 0 1 1 1 
+1 1 0 1 0 0 0 
+1 1 0 1 0 0 1 
+1 1 0 1 0 1 0 
+1 1 0 1 0 1 1 
+1 1 0 1 1 0 0 
+1 1 0 1 1 0 1 
+1 1 0 1 1 1 0 
+1 1 0 1 1 1 1 
+1 1 1 0 0 0 0 
+1 1 1 0 0 0 1 
+1 1 1 0 0 1 0 
+1 1 1 0 0 1 1 
+1 1 1 0 1 0 0 
+1 1 1 0 1 0 1 
+1 1 1 0 1 1 0 
+1 1 1 0 1 1 1 
+1 1 1 1 0 0 0 
+1 1 1 1 0 0 1 
+1 1 1 1 0 1 0 
+1 1 1 1 0 1 1 
+1 1 1 1 1 0 0 
+1 1 1 1 1 0 1 
+1 1 1 1 1 1 0 
+1 1 1 1 1 1 1 
+For 7 inputs , table size is 128
+------------Truth table of 8 inputs function --------------
+For 8 inputs , table size is 256
+------------Truth table of 9 inputs function --------------
+For 9 inputs , table size is 512
+------------Truth table of 10 inputs function --------------
+For 10 inputs , table size is 1024
+------------Truth table of 11 inputs function --------------
+For 11 inputs , table size is 2048
+------------Truth table of 12 inputs function --------------
+For 12 inputs , table size is 4096
+------------Truth table of 13 inputs function --------------
+For 13 inputs , table size is 8192
+------------Truth table of 14 inputs function --------------
+For 14 inputs , table size is 16384
+------------Truth table of 15 inputs function --------------
+For 15 inputs , table size is 32768
+------------Truth table of 16 inputs function --------------
+For 16 inputs , table size is 65536
+------------Truth table of 17 inputs function --------------
+For 17 inputs , table size is 131072
+------------Truth table of 18 inputs function --------------
+For 18 inputs , table size is 262144
+------------Truth table of 19 inputs function --------------
+For 19 inputs , table size is 524288
+------------Truth table of 20 inputs function --------------
+For 20 inputs , table size is 1048576
+------------Truth table of 21 inputs function --------------
+For 21 inputs , table size is 2097152
+------------Truth table of 22 inputs function --------------
+For 22 inputs , table size is 4194304
+------------Truth table of 23 inputs function --------------
+For 23 inputs , table size is 8388608
+------------Truth table of 24 inputs function --------------
+For 24 inputs , table size is 16777216
+------------Truth table of 25 inputs function --------------
+For 25 inputs , table size is 33554432
+------------Truth table of 26 inputs function --------------
+For 26 inputs , table size is 67108864
+------------Truth table of 27 inputs function --------------
+For 27 inputs , table size is 134217728
+------------Truth table of 28 inputs function --------------
+For 28 inputs , table size is 268435456
+------------Truth table of 29 inputs function --------------
+For 29 inputs , table size is 536870912
+------------Truth table of 30 inputs function --------------
+For 30 inputs , table size is 1073741824
+------------Truth table of 31 inputs function --------------
+For 31 inputs , table size is 2147483647
+------------Truth table of 32 inputs function --------------
+For 32 inputs , table size is 2147483647
+------------Truth table of 33 inputs function --------------
+For 33 inputs , table size is 2147483647
+------------Truth table of 34 inputs function --------------
+For 34 inputs , table size is 2147483647
+------------Truth table of 35 inputs function --------------
+For 35 inputs , table size is 2147483647
+------------Truth table of 36 inputs function --------------
+For 36 inputs , table size is 2147483647
+------------Truth table of 37 inputs function --------------
+For 37 inputs , table size is 2147483647
+------------Truth table of 38 inputs function --------------
+For 38 inputs , table size is 2147483647
+------------Truth table of 39 inputs function --------------
+For 39 inputs , table size is 2147483647
+Done
