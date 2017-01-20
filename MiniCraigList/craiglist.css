@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 17, 2016, 10:53:31 PM
+    Author     : Shirisha
+*/
+/* CSS styling for the project*/
+h1{
+    color: blue;
+    text-align : center;
+}
+h2{
+    color:green;
+}
+h3{
+    color: brown;
+}
+#container{
+    width:80%;
+}
+#left{
+    float:left;
+    width:100px;
+}
+#right{
+    float:right;
+    width:100px;
+}
+#center{
+    margin:0 auto;
+    width:100px;
+}
+label{
+     display: inline-block;
+     width: 150px;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+p{
+    word-wrap: break-word;
+    color :grey;
+}

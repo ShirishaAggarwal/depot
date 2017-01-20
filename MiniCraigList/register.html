@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="myCss.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Register Page</h1>
+        <form action="register.php" method="POST">
+            <label for="newuser">Enter your UserName : </label>
+            <input type="text" name="newuser" id="newuser" placeholder="Lily Rhodes">
+            <br><br>
+            
+            <label for="newpassword">Enter a Password : </label>
+            <input type="password" name="newpassword" id="newpassword">
+            <br><br>
+            
+            <label for="newemail">Enter your email : </label>
+            <input type="email" name="newemail" id="newemail" placeholder="xxx@email.xxx">
+            <br><br>
+            
+            <input type="submit" value="Register">
+            
+            <br><br>
+            <a href="index.php">Back to home page</a>
+        </form>              
+    </body>
+</html>
