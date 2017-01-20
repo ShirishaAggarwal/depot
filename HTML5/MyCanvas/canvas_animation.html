@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">	
+		<title>Using the Canvas tag</title>
+		
+		<link rel="stylesheet" href="mycanvas.css"/>
+
+		<script src="dist/html5shiv.js"></script><!--htmlshiv file-->
+
+	</head>
+	
+	<header>
+		<h2>Demonstration to show animation using canvas</h2>
+	</header>
+	
+		<canvas id="animation" width="1000" height="400"></canvas>
+		<script>
+			var cnv = document.getElementById('animation');
+			var ctx = cnv.getContext('2d');
+			
+			otherchange = 6;
+			// x and y variables determine the position of the ball
+			x = 200;
+			y = 200;
+			// change determines how far the ball moves during a redraw and whichdirection
+			change = 8;
+			// width and height determine the dimensions of the box.
+			
+			w = 1000;
+			h = 400;
+			
+			function animate() {			
+				ctx.fillStyle = 'lightgray';
+				ctx.fillRect(0,0,w,h);
+				ctx.fillStyle = 'red';
+				ctx.beginPath();
+				ctx.arc(x,y,20,0,Math.PI*2,true);
+				ctx.fill();
+				if (x>=w||x<=0) {
+				change = -change
+				}
+				x = x + change;
+				if(y>=h||y<=0) {
+				otherchange = -otherchange;
+				}
+				y = y + otherchange;				
+			}			
+			
+			setInterval(animate, 20);
+		</script>					
+		
+		<div id="canvaspage">			
+			<a href="mycanvas.html">Back to My Canvas Page</a>			
+		</div>
+		<br>
+	   <footer><small><i>Copyright (c) shirishakandalai. All rights reserved.</i></small></footer>
+	
+</html>	

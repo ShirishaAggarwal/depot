@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8">  		
+		<title>Travel Site</title>	
+	
+	<link rel="stylesheet" href="travelsite.css"/>
+	
+	<script src="dist/html5shiv.js"></script><!--htmlshiv file-->	  
+	<script src="scripts.js"></script>
+	
+	<meta name="description" content="Travel Site">
+    <meta name="author" content="Shirisha">			
+	
+
+<header>
+	<figure>
+		<img src="images/vacation.jpg" width="100" height="50" alt="vacation image" aria-descibedby="figcap01" >
+		<figcaption id="figcap01">Dream vacations</figcaption>
+	</figure>
+		
+	<nav>
+		<ul>
+			<li><a href="travelsite.html">Home</a>
+			<a href="packages.html">Packages</a>
+			<a href="places.html">Places to visit</a>
+			<a href="about.html">About us</a></li>			
+		</ul>
+	</nav>	
+</header>		
+</head>
+<body>
+  <main>
+	<h3><font color="blue">Places to Visit</font></h3>
+	<section>				
+		<article>		
+		<p>Most beautiful places on earth</p>
+			<video width="200" height="150" controls autoplay> <!-- Autoplay without boolean and with controls-->
+				<source src="videos/video_1.mp4" type="video/mp4"><!--Works for Chrome,IE,Opera,Firefox-->
+				<source src="videos/video_1.ogv" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+			
+			<object width="200" height="150" type="application/x-shockwave-flash"data="fallback.swf">
+				<param name="movie" value="fallback.swf" />
+				<param name="flashvars" value="autostart=true&file=video.flv">
+			</object>
+		</article>
+		
+		<article>		
+		<p>Click to play the video and see some awesome places to visit around the world</p>
+			<video poster="images/poster.jpg" controls><!--Demonstrates poster tag functionality-->
+				<source src="videos/video_2.mp4" type="video/mp4"><!--Works for Chrome,IE,Opera,Firefox-->
+				<source src="videos/video_2.ogv" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+		</article>
+		
+		<article>		
+		<p>Wonderful video</p>
+			<video autoplay="true" loop muted> <!--Autoplay without controls, with boolean and with loop(repeat) functionality and mute functionality-->
+				<source src="videos/video_3.mp4" type="video/mp4"><!--Tested on Chrome,IE,Opera,Firefox-->
+				<source src="videos/video_3.ogv" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+		</article>
+		
+	</section>
+  </main>
+	<footer><small><i>Copyright (c) shirishakandalai. All rights reserved.</i></small></footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">	
+		<title>Using the Canvas tag</title>
+		
+		<link rel="stylesheet" href="mycanvas.css"/>
+
+		<script src="dist/html5shiv.js"></script><!--htmlshiv file-->
+
+	</head>
+	
+	<header>
+		<h2>Demonstration to draw a Rectangle using canvas</h2>
+	</header>
+	
+		<canvas id="rectangle" width="1200" height="400"></canvas>
+		<script>
+			var cnv = document.getElementById('rectangle');
+			var ctx = cnv.getContext('2d');
+			
+			//Rectangle 1
+			ctx.strokeStyle = 'green';
+			ctx.lineWidth = '5';
+			ctx.fillStyle = 'yellow';
+			ctx.fillRect(210, 70, 50, 100);
+			ctx.fillStyle = 'red';
+			ctx.fillRect(275, 70, 100, 100);
+			ctx.strokeRect(200, 60, 300, 200);	
+			
+			//Rectangle 2
+			ctx.strokeStyle = 'green';
+			ctx.lineWidth = '5';
+			ctx.fillStyle = 'yellow';
+			ctx.fillRect(700, 60, 300, 200);
+			ctx.strokeRect(700, 60, 300, 200);
+			
+			//cleared spot in rectangle2
+			ctx.clearRect(750,80, 200, 150);		
+			
+			ctx.fillStyle = 'blue';
+			ctx.font = '24px "Arial"';
+			ctx.fillText('Rectangle with little rectangles in it', 165, 330);
+			
+			ctx.strokeStyle = 'red';
+			ctx.lineWidth = '1';
+			ctx.font = '30px "Arial Black"';
+			ctx.strokeText('Rectangle with clear fill', 660, 330);
+		</script>
+		
+		<div id="canvaspage">			
+			<a href="mycanvas.html">Back to My Canvas Page</a>			
+		</div>
+		<br>
+	   <footer><small><i>Copyright (c) shirishakandalai. All rights reserved.</i></small></footer>
+	
+</html>	

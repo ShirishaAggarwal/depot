@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">	
+		<title>Using the Canvas tag</title>
+		
+		<link rel="stylesheet" href="mycanvas.css"/>
+
+		<script src="dist/html5shiv.js"></script><!--htmlshiv file-->
+
+	</head>
+	
+	<header>
+		<h2>Demonstration to draw a Triangle using canvas</h2>
+	</header>
+	
+		<canvas id="triangle" width="1500" height="400"></canvas>
+		<script>
+			var cnv = document.getElementById('triangle');
+			var ctx = cnv.getContext('2d');
+									
+			ctx.lineWidth = 10;
+			ctx.strokeStyle = "rgb(200,100,40)";
+						
+			ctx.moveTo(250,50);
+			ctx.lineTo(50,250);
+			ctx.lineTo(450,250);
+			ctx.closePath();									
+			ctx.stroke();
+			
+			ctx.beginPath();
+			ctx.moveTo(850,50);
+			ctx.lineTo(650,250);
+			ctx.lineTo(1050,250);
+			ctx.closePath();	
+			ctx.fillStyle = "blue"; 
+			ctx.fill();			
+			ctx.stroke();
+			
+			ctx.fillStyle = 'blue';
+			ctx.font = '24px "Arial"';
+			ctx.fillText('No fill traingle', 220, 330);
+			
+			ctx.strokeStyle = 'red';
+			ctx.lineWidth = '1';
+			ctx.font = '30px "Arial Black"';
+			ctx.strokeText('Traingle with blue color filling', 620, 330);
+		</script>
+		
+		<div id="canvaspage">			
+			<a href="mycanvas.html">Back to My Canvas Page</a>			
+		</div>
+		<br>
+	   <footer><small><i>Copyright (c) shirishakandalai. All rights reserved.</i></small></footer>
+	
+</html>	

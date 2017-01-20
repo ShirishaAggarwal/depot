@@ -1,0 +1,48 @@
+@CHARSET "ISO-8859-1";
+figure { 
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+mark {    
+    color: black;
+    background-color: none;    
+}
+
+button{	
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+section {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+body{
+	background-image:url("background.jpg");
+	background-size:100%;
+	display:block;
+}
+
+figcaption{
+	font-family: "Times New Roman", Georgia, Serif;
+	color:blue;
+	font-size: 15px;
+}
+
+footer{
+	text-align:center;
+}
+
+video{
+	width:320;
+	height:240;
+}

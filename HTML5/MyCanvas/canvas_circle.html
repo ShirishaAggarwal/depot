@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">	
+		<title>Using the Canvas tag</title>
+		
+		<link rel="stylesheet" href="mycanvas.css"/>
+
+		<script src="dist/html5shiv.js"></script><!--htmlshiv file-->
+
+	</head>
+	
+	<header>
+		<h2>Demonstration to draw a Circle using canvas</h2>
+	</header>
+	
+	
+	<canvas id="circle" width="1200" height="400"></canvas>
+	<script>
+		var cnv = document.getElementById('circle');
+		var ctx = cnv.getContext('2d');
+		ctx.fillStyle = 'green';
+		ctx.arc(300,150,120,0,Math.PI*2,false);
+		ctx.fill();							
+		
+		ctx.arc(600,150,120,0,Math.PI,false);			
+		ctx.fill();
+					
+		ctx.arc(900,150,120,0,Math.PI,true);			
+		ctx.fill();						
+		
+		ctx.fillStyle = 'blue';
+		ctx.font = '24px "Arial"';
+		ctx.fillText('Full Circle', 240, 330);
+		
+		ctx.strokeStyle = 'red';
+		ctx.lineWidth = '1';
+		ctx.font = '30px "Arial Black"';
+		ctx.strokeText('Semi Circle', 500, 330);
+		
+		ctx.strokeStyle = 'red';
+		ctx.lineWidth = '1';
+		ctx.font = '30px "Arial Black"';
+		ctx.strokeText('Semi Circle', 800, 330);
+	</script>
+	
+	<div id="canvaspage">			
+		<a href="mycanvas.html">Back to My Canvas Page</a>			
+	</div>
+	<br>
+   <footer><small><i>Copyright (c) shirishakandalai. All rights reserved.</i></small></footer>	
+	
+</html>	

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8">  		
+		<title>Travel Site</title>	
+	
+	<link rel="stylesheet" href="travelsite.css"/>
+	
+	<script src="dist/html5shiv.js"></script><!--htmlshiv file-->	  
+	<script src="scripts.js"></script>
+	
+	<meta name="description" content="Travel Site">
+    <meta name="author" content="Shirisha">	
+</head>
+	
+<header>
+	<figure>
+		<img src="images/vacation.jpg" width="100" height="50" alt="vacation image" aria-descibedby="figcap01" >
+		<figcaption id="figcap01">Dream vacations</figcaption>
+	</figure>
+	
+	<nav>
+		<ul>
+			<li><a href="travelsite.html">Home</a>
+			<a href="packages.html">Packages</a>
+			<a href="places.html">Places to visit</a>
+			<a href="about.html">About us</a></li>			
+		</ul>
+	</nav>
+</header>	
+	
+<body>
+ <main>
+	<form action="success.html" validate> 
+	<label for="firstname">First Name</label>
+		<input type="text" name="firstname" autofocus autocomplete required placeholder="First Name">
+	<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" autocomplete required placeholder="Last Name"><br><br>	
+	<label for="dob">Date of Birth</label>
+		<input type="date" name="dob"><br><br>
+	<label for="email">Email</label>
+		<input type="email" name="email" autocomplete placeholder="email@xxx.com" required><br><br>
+	<label for="phone">Phone Number</label>
+		<input type="tel" name="phone" autocomplete placeholder="111-222-1234" pattern="[0-9]{10}" ><br><br>
+	<label for="password">Choose Password</label>
+		<input type="password" name="password" required pattern="[a-z]{1,15}"><br><br>
+	<label for="messagetext">Message for us</label>
+		<input type="textarea" width="200" height="200" name="messagetext" placeholder="Type message here upto 150 characters" pattern="[a-z]{1,150}" spellcheck><br><br>
+	<input type="submit" value="Submit">		
+ </main>	
+	
+	<footer><small><i>Copyright (c) shirishakandalai. All rights reserved.</i></small></footer>
+
+</body>
+
+</html>
