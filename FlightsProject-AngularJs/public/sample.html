@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+</head>
+<body ng-app="controllers" ng-controller="flightsCtrl">
+
+<div id="todoPanel" class="panel">
+    <h3 class="panel-header">To Do List</h3>
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Index</th>
+            <th>Carriers</th>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr ng-repeat="item in carriers">
+
+            <td>{{$index+1}}</td>
+            <td><a href="#/viewFlights/{{item.name}}">{{item.name}}</a></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript" src="controllers.js"></script>
+<script type="text/javascript" src="services.js"></script>
+<script type="text/javascript" src="fapp.js"></script>
+
+</body>
+</html>
