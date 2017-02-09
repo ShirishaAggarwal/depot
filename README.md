@@ -1,6 +1,4 @@
-# depot
-
-Here is the list of the projects dedveloped during UCSC Extension certification.
+Here is the list of the projects developed during UCSC Extension certification.
 
 1) Flight Details : Its a web project to show the details of Flights arrriving / departing an airport. The web page shows a list of flights through the airport and on click on the flight further details are shown.
 
